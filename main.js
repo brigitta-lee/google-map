@@ -16,8 +16,7 @@ $(document).ready(function($) {
                 dataType: 'json',
 
                 success: function(r) {
-                  console.log('success', r);
-                  //$('.content').text(r.results[1].formatted_address);
+                  $('.content').text(r.results[1].formatted_address);
 
                 },
                 error: function(e) {
